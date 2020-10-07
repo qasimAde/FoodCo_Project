@@ -9,7 +9,7 @@ public class HomeDecoPage {
     public HomeDecoPage(WebDriver driver) {
         this.driver = driver;
     }
-
+// Select 3 items from the household - home decor category
     private By item1 = By.xpath("//*[@id=\"content\"]/div[3]/ul/li[4]/div/div[1]/a/div");
     public boolean addItem1(){
         return driver.findElement(item1).isDisplayed();

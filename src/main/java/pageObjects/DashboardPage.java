@@ -10,7 +10,7 @@ public class DashboardPage {
     private WebDriver driver;
     //click on household category
     public HouseHPage clickHhBtn() throws InterruptedException {
-        Thread.sleep(5000);
+        Thread.sleep(4000);
         driver.findElement(By.xpath("//*[@id=\"nav-menu-item-3339\"]/a")).click();
         return new HouseHPage(driver);
     }
