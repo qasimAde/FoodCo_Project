@@ -15,6 +15,9 @@ public class HomePage {
     public String getPopupHeading(){
         return driver.findElement(popupHeading).getText();
     }
+    public boolean getLagosText() {
+        return driver.findElement(lagos).isDisplayed();
+    }
     //select delivery location as Lagos
     private By lagos=By.xpath("/html/body/div[6]/div[2]/div[1]/form/label[2]");
     public void pickLagos() throws InterruptedException {
@@ -28,5 +31,7 @@ public class HomePage {
         driver.findElement(myAccount).click();
         return new LoginPage(driver);
     }
+
+
 }
 
